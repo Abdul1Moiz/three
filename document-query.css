@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Poppins', ui-sans-serif, sans-serif;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+/* Colors & fonts*/
+:root {
+
+
+    --background-color: #0e0e0e;
+    --text-color: #f6f1df;
+    --primary-color: #e6c36a;
+    --box-shadow-color: #71591b;
+    --special-font-color: #ffda73;
+    --border-color: #ccaa44;
+    --head-font-weight: 700;
+    --light-font-weight: 550;
+    --box-color: #e6c36a12;
+
+
+    --font-size-base: 1rem;
+    /* 16px default */
+    --font-size-small: 0.875rem;
+    /* 14px */
+    --font-size-p: 1rem;
+    /* 16px */
+    --font-size-h4: 1.25rem;
+    /* 20px */
+    --font-size-h3: 1.5rem;
+    /* 24px */
+    --font-size-h2: 2rem;
+    /* 32px */
+    --font-size-h1: 2.5rem;
+    /* 40px */
+    --font-size-large: 3rem;
+    --font-size-larger: 3.5rem;
+    --font-size-largest: 4rem;
+    --font-size-lg-h4: 5rem;
+    --font-size-lg-h3: 6rem;
+    --font-size-lg-h2: 7rem;
+    --font-size-lg-h1: 8rem;
+    /* Font weights */
+    --font-weight-light: 400;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+
+
+    --font-size-xs: 0.6875rem;
+    /* 11px */
+    --font-size-sm: 0.8125rem;
+    /* 13px */
+    --font-size-av: 0.9375rem;
+    /* 15px */
+    --font-size-md: 1rem;
+    /* 16px */
+    --font-size-lg: 1.125rem;
+    /* 18px */
+    --font-size-xl: 1.25rem;
+    /* 20px */
+    --font-size-2xl: 1.5rem;
+    /* 24px */
+}
+
+
+/* <!-- ------------Case Study------------> */
+
+@media (max-width: 999.98px) {
+    .case-grid {
+        grid-template-columns: 1fr;
+        border-top: 10px solid #71591b;
+    }
+
+    .case-item {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+
+    .case-text h3 {
+        text-align: center;
+    }
+
+    .case-text h4 {
+        text-align: center;
+    }
+
+    .case-text,
+    .case-text.tall {
+        margin-top: 0;
+        /* Remove negative margin */
+        min-height: auto;
+    }
+
+    .case-text p {
+        padding: 1% 12%;
+    }
+
+    .case-image img,
+    .case-image.short img {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .case-text {
+        padding: 20px 10px;
+    }
+
+    .case-text h3,
+    .case-text h4 {
+        font-size: var(--font-size-md);
+    }
+
+    .case-text p {
+        font-size: var(--font-size-sm);
+        padding: 20px 0 0 0;
+    }
+
+    .case-study-heading h2 {
+        font-size: var(--font-size-h2);
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    nav ul li a {
+        padding: 4px 6px;
+        font-size: var(--font-size-sm);
+    }
+
+    nav ul li {
+        font-weight: var(--font-weight-light);
+    }
+
+    nav {
+        background: linear-gradient(to right, #71591b, #ffda73);
+    }
+
+    .footer-message span {
+        color: gainsboro;
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-light);
+    }
+
+    .footer-message {
+        margin: 130px 2% 0 2%;
+    }
+
+    .hero-cta-2 a {
+        font-size: var(--font-size-lg);
+        padding: 5px 14px;
+    }
+
+}
