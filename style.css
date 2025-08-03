@@ -284,14 +284,6 @@ main {
     transform: translateY(-7px);
 }
 
-.section-card i {
-    color: var(--special-font-color);
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 .section-card h4 {
     display: flex;
